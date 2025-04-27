@@ -75,7 +75,7 @@ export default function ProjectsPage() {
                       {project.languages.map((lang, i) => (
                         <span
                           key={i}
-                          className="px-4 py-1.5 text-sm rounded-full bg-secondary/60 text-secondary-foreground backdrop-blur-sm"
+                          className="px-4 py-1.5 text-sm rounded-full bg-secondary/60 text-secondary-foreground backdrop-blur-xs"
                         >
                           {lang}
                         </span>

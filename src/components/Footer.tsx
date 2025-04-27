@@ -34,7 +34,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-border bg-gradient-to-b from-background to-background/50 backdrop-blur-sm">
+    <footer className="border-t border-border bg-linear-to-b from-background to-background/50 backdrop-blur-xs">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <motion.div
           variants={container}
@@ -45,7 +45,7 @@ export default function Footer() {
           <motion.div variants={item} className="flex flex-col gap-4">
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="text-2xl font-bold text-foreground bg-clip-text bg-gradient-to-r from-primary to-primary/80"
+              className="text-2xl font-bold text-foreground bg-clip-text bg-linear-to-r from-primary to-primary/80"
             >
               {SITE_CONFIG.footerTitle}
             </motion.div>
@@ -61,7 +61,7 @@ export default function Footer() {
           </motion.div>
 
           <motion.div variants={item} className="flex flex-col gap-6">
-            <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
+            <h3 className="text-xl font-bold bg-clip-text text-transparent bg-linear-to-r from-primary to-primary/80">
               Quick Links
             </h3>
             <nav className="flex flex-col gap-4">
@@ -93,7 +93,7 @@ export default function Footer() {
           </motion.div>
 
           <motion.div variants={item} className="flex flex-col gap-6">
-            <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
+            <h3 className="text-xl font-bold bg-clip-text text-transparent bg-linear-to-r from-primary to-primary/80">
               Contact
             </h3>
             <div className="flex flex-col gap-4">

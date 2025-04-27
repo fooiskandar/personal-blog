@@ -192,7 +192,7 @@ export function ClientBlogContent({
               <input
                 type="text"
                 placeholder="Search posts..."
-                className="w-full md:w-72 pl-10 pr-4 py-2.5 border rounded-lg shadow-sm focus:ring-2 focus:ring-primary/20 transition-all bg-background dark:bg-background"
+                className="w-full md:w-72 pl-10 pr-4 py-2.5 border rounded-lg shadow-xs focus:ring-2 focus:ring-primary/20 transition-all bg-background dark:bg-background"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />

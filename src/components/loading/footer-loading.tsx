@@ -4,7 +4,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export function FooterLoading() {
   return (
-    <footer className="border-t border-border bg-gradient-to-b from-background to-background/50">
+    <footer className="border-t border-border bg-linear-to-b from-background to-background/50">
       <div className="mx-auto max-w-7xl px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {/* Brand Section */}

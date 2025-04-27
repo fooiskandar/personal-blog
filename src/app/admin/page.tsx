@@ -135,14 +135,14 @@ export default function AdminPage() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", damping: 15 }}
-          className="w-full max-w-md mx-auto px-6 py-12 backdrop-blur-sm bg-white/80 dark:bg-black/80 rounded-xl shadow-lg"
+          className="w-full max-w-md mx-auto px-6 py-12 backdrop-blur-xs bg-white/80 dark:bg-black/80 rounded-xl shadow-lg"
         >
           <form onSubmit={handleLogin} className="space-y-6">
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-3xl font-bold text-center bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"
+              className="text-3xl font-bold text-center bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent"
             >
               Admin Login
             </motion.h1>
@@ -159,7 +159,7 @@ export default function AdminPage() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     disabled={state.isLoading}
-                    className="pr-10 backdrop-blur-sm bg-white/50 dark:bg-black/50"
+                    className="pr-10 backdrop-blur-xs bg-white/50 dark:bg-black/50"
                   />
                 </motion.div>
                 <Button
@@ -184,7 +184,7 @@ export default function AdminPage() {
               >
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all"
+                  className="w-full bg-linear-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all"
                   disabled={state.isLoading}
                 >
                   {state.isLoading ? (
@@ -222,7 +222,7 @@ export default function AdminPage() {
     <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-screen bg-gradient-to-b from-background to-background/95 dark:from-background dark:to-background/95"
+      className="min-h-screen bg-linear-to-b from-background to-background/95 dark:from-background dark:to-background/95"
     >
       <div className="container max-w-5xl mx-auto px-4 sm:px-6 py-12">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
@@ -230,7 +230,7 @@ export default function AdminPage() {
             layout
             className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8"
           >
-            <TabsList className="relative backdrop-blur-sm bg-white/50 dark:bg-black/50 rounded-lg">
+            <TabsList className="relative backdrop-blur-xs bg-white/50 dark:bg-black/50 rounded-lg">
               <TabsTrigger
                 className="hover:text-primary hover:scale-105 transition-all duration-200"
                 value="config"
@@ -273,7 +273,7 @@ export default function AdminPage() {
               >
                 <Alert
                   variant={state.error ? "destructive" : "default"}
-                  className="relative backdrop-blur-sm bg-white/50 dark:bg-black/50"
+                  className="relative backdrop-blur-xs bg-white/50 dark:bg-black/50"
                 >
                   <AlertDescription>
                     {state.error || state.success}

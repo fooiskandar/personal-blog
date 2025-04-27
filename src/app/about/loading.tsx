@@ -57,7 +57,7 @@ export default function Loading() {
               transition={{ delay: 0.1 }}
               className="flex-1"
             >
-              <div className="aspect-[16/9] relative">
+              <div className="aspect-16/9 relative">
                 <Skeleton className="h-full w-full rounded-2xl" />
               </div>
             </motion.div>

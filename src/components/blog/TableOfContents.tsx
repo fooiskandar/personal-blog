@@ -120,7 +120,7 @@ export function TableOfContents({ headings }: TOCProps) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-auto px-4 md:px-6 backdrop-blur-sm bg-background/80"
+          className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-auto px-4 md:px-6 backdrop-blur-xs bg-background/80"
         >
           <h2 className="text-lg font-semibold mb-4 text-primary">
             Table of Contents
@@ -135,7 +135,7 @@ export function TableOfContents({ headings }: TOCProps) {
                 className={`
                   flex items-center w-full text-left px-3 py-2 rounded-lg
                   hover:bg-secondary/60 transition-all duration-200 ease-in-out
-                  ${activeId === heading.id ? "bg-secondary/80 text-primary font-medium shadow-sm" : "text-muted-foreground"}
+                  ${activeId === heading.id ? "bg-secondary/80 text-primary font-medium shadow-xs" : "text-muted-foreground"}
                   ${heading.level === 1 ? "ml-0" : heading.level === 2 ? "ml-4" : heading.level === 3 ? "ml-8" : "ml-12"}
                 `}
               >
@@ -143,7 +143,7 @@ export function TableOfContents({ headings }: TOCProps) {
                   animate={{ rotate: activeId === heading.id ? 90 : 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <ChevronRight className="h-3.5 w-3.5 mr-2 flex-shrink-0" />
+                  <ChevronRight className="h-3.5 w-3.5 mr-2 shrink-0" />
                 </motion.div>
                 <span className="text-sm truncate">{heading.text}</span>
               </motion.button>

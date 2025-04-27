@@ -99,7 +99,7 @@ export default function AboutPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex-1 w-full"
             >
-              <div className="aspect-[16/9] relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <div className="aspect-16/9 relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <Image
                   src={SITE_CONFIG.aboutHeroImage}
                   alt="About page hero image"

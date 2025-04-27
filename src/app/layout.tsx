@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
@@ -25,20 +24,20 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="apple-mobile-web-app-title" content={appleTitle} />
-        <body className={`${geist.className} flex min-h-screen flex-col`}>
-          <ThemeProvider
-            attribute="class"
-            enableSystem={false}
-            defaultTheme="light"
-            storageKey="theme"
-          >
-            <Toaster />
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </ThemeProvider>
-        </body>
       </head>
+      <body className={`${geist.className} flex min-h-screen flex-col`}>
+        <ThemeProvider
+          attribute="class"
+          enableSystem={false}
+          defaultTheme="light"
+          storageKey="theme"
+        >
+          <Toaster />
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

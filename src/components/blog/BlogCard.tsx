@@ -27,7 +27,7 @@ export function BlogCard({ post, index }: BlogCardProps) {
         href={`/blog/${post.slug}`}
         className="group grid grid-cols-1 lg:grid-cols-[350px_1fr] gap-4 overflow-hidden rounded-xl border bg-card transition-all hover:shadow-xl"
       >
-        <div className="relative aspect-[16/9] lg:aspect-[4/3] overflow-hidden w-full h-full">
+        <div className="relative aspect-16/9 lg:aspect-4/3 overflow-hidden w-full h-full">
           <Image
             src={post.image || "/example-blog.svg"}
             alt={post.title}
@@ -37,7 +37,7 @@ export function BlogCard({ post, index }: BlogCardProps) {
             className="object-cover w-full h-full transition-transform duration-500 ease-out group-hover:scale-110"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          <div className="absolute inset-0 bg-linear-to-r from-background/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         </div>
 
         <div className="p-5 lg:p-8 space-y-5 lg:space-y-6">
