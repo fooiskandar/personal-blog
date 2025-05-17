@@ -2,7 +2,7 @@ export const SITE_CONFIG = {
   name: "Eren",
   navTitle: "Eren's Projects",
   footerTitle: "Eren",
-  siteName: "Eren's Blog",
+  siteName: "Mantul",
   description:
     "A modern, responsive portfolio website showcasing my software development projects, technical blog posts, and professional experience. Built with Next.js and Tailwind CSS for optimal performance and design flexibility.",
   copyright: "MrErenK. All rights not reserved. WHT!?",
